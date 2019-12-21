@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var data = [
+            {
+                "title": "新鲜水果",
+                "item": [
+                    "柚子",
+                    "榴莲",
+                    "车厘子"
+                ]
+            },
+            {
+                "title": "海鲜水产",
+                "item": [
+                    "小龙虾",
+                    "鱼类",
+                    "贝类"
+                ]
+            },
+            {
+                "title": "精选肉类",
+                "item": [
+                    "鸡翅",
+                    "猪肋排",
+                    "牛排"
+                ]
+            },
+            {
+                "title": "冷饮冻食",
+                "item": [
+                    "酸奶",
+                    "冰淇淋",
+                    "牛奶"
+                ]
+            },
+            {
+                "title": "蔬菜蛋品",
+                "item": [
+                    "水培蔬菜",
+                    "玉米",
+                    "蛋品"
+                ]
+            }
+        ]
+        var a = document.querySelector(".tab_head").children;
+        var arr = [];
+        for (var i = 0; i < a.length; i++) {
+            var o = {};
+            o.title = a[i].querySelector(".item_title").innerText;
+            o.item = [];
+            var b = a[i].querySelectorAll(".item_children_item");
+            for (var k = 0; k < b.length; k++) {
+                o.item.push(b[k].innerText);
+            }
+            arr.push(o);
+
+        }
+        var b = document.querySelectorAll(".tab_body_item");
+        var arr1 = [];
+        for (var j = 0; j < b.length; j++) {
+
+            var c = b[j].querySelectorAll(".cate_item");
+            for (var i = 0; i < c.length; i++) {
+                // o1.arr3=[];
+                var o1 = {};
+                o1.title1 = c[i].querySelector(".cate_tit_lk").innerText;
+                //    o1.arr3.push(title1);
+                var e = c[i].querySelectorAll(".cate_con_lk");
+                o1.arr2 = [];
+                for (var k = 0; k < e.length; k++) {
+                    o1.arr2.push(e[k].innerText);
+                }
+                arr1.push(o1);
+            }
+
+        }
+
+
+
+        var a = document.querySelectorAll(".goods_item");
+        var arr = [];
+        for (var i = 0; i < a.length; i++) {
+            var o = {};
+            var item = a[i];
+            o.src = item.querySelector("img").src;
+            o.title1 = item.querySelector(".goods_item_name").innerText;
+            o.price = item.querySelector(".goods_item_price").innerText;
+            var good = item.querySelector(".goods_item_good");
+            o.goods = good.innerText ? good.innerText : "";
+            arr.push(o);
+        }
+
+
+        var a = document.querySelectorAll(".goods_item");
+        var data = [];
+        for (var i = 0; i < a.length; i++) {
+            var o = {};
+            o.src = a[i].querySelector(".goods_item_img").src;
+            o.title = a[i].querySelector(".goods_item_promote");
+            o.weight = a[i].querySelector(".goods_item_name").innerText;
+            data.push(o);
+        }
+
+        var data = [{
+            "scr": "../img/dong1.jpg",
+            "title": "富含胶粘蛋白，能够为皮肤补充胶原蛋白，增强皮肤弹性。",
+            "name": "黄豆焖猪蹄",
+            "item_seebtn": "去看看 &gt;"
+        },
+        {
+            "scr": "../img/dong2.jpg",
+            "title": "咖喱与猪排的完美结合~一口咬下去实在太满足了~好吃的停不下来",
+            "name": "咖喱猪排饭",
+            "item_seebtn": "去看看 &gt;"
+        }]
+           let html = `<ul class="Xcontent01">
+            <div class="Xcontent06"><img src="../img/${nowsrc2[0]}"></div>
+            <ol class="Xcontent08">
+                <div class="Xcontent07"><img src="../img/${nowsrc2[0]}"></div>
+                <div class="Xcontent09"><img src="../img/${nowsrc2[1]}"></div>
+                <div class="Xcontent10"><img src="../img/${nowsrc2[2]}"></div>
+                <div class="Xcontent11"><img src="../img/${nowsrc2[3]}"></div>
+                <div class="Xcontent12"><img src="../img/${nowsrc2[4]}"></div>
+            </ol>
+            <ol class="Xcontent13">
+                <div class="Xcontent14"><a href="#">
+                        <p>${data[0].title}</p>
+                    </a></div>
+                <div class="Xcontent15"><img src="../lib/shangchengxiangmu/images/shangpinxiangqing/X11.png"></div>
+                <div class="Xcontent16">
+                    <p>${data[0].words}</p>
+                </div>
+                <div class="Xcontent17">
+                    <p class="Xcontent18">售价</p>
+                    <p class="Xcontent19">￥<span>${data[0].price}.00</span></p>
+                    <div class="Xcontent20">
+                        <p class="Xcontent21">促销</p>
+                        <img src="../lib/shangchengxiangmu/images/shangpinxiangqing/X12.png">
+                        <p class="Xcontent22">领610元新年礼券，满再赠好礼</p>
+                    </div>
+                    <div class="Xcontent23">
+                        <p class="Xcontent24">服务</p>
+                        <p class="Xcontent25">30天无忧退货&nbsp;&nbsp;&nbsp;&nbsp; 48小时快速退款 &nbsp;&nbsp;&nbsp;&nbsp; 满88元免邮
+                        </p>
+                    </div>
+                </div>
+                <div class="Xcontent26">
+                    <p class="Xcontent27">种类</p>
+                    <div class="Xcontent28"><img src="../img/${nowsrc2[0]}"></div>
+                    <div class="Xcontent28"><img src="../img/${nowsrc2[1]}"></div>
+                    <div class="Xcontent28"><img src="../img/${nowsrc2[2]}"></div>
+                    <div class="Xcontent28"><img src="../img/${nowsrc2[3]}"></div>
+                </div>
+                <div class="Xcontent30">
+                    <p class="Xcontent31">数量</p>
+                    <div class="Xcontent32"><img src="../lib/shangchengxiangmu/images/shangpinxiangqing/X15.png"></div>
+                    <form>
+                        <input class="input" value="1"></form>
+                    <div class="Xcontent33" data-kucun="${data[0].kucun}"><img src="../lib/shangchengxiangmu/images/shangpinxiangqing/16.png"></div>
+                </div>
+                <div class="Xcontent35" data-gid="${data[0].gid}" data-cuid="${data[0].cuid}"><a href="###"><img
+                            src="../lib/shangchengxiangmu/images/shangpinxiangqing/X18.png"></a></div>
+            </ol>
+            </ul>`;  
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

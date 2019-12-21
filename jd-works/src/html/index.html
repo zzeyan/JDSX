@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JD生鲜</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/top.css">
+  <link rel="stylesheet" href="../css/indexhd.css">
+  <link rel="stylesheet" href="../css/iconfont//iconfont.css">
+  <link rel="stylesheet" href="../css/indexmain.css">
+  <link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+  <script src="../lib/common.js"></script>
+  <script src="../lib/jquery-3.4.1.js"></script>
+  <script src="../lib/swiper/js/swiper.js"></script>
+</head>
+
+<body>
+  <div>
+    <div id="top">
+    </div>
+    <header id="header" class="w has_qrcode clearfix">
+    </header>
+    <main class="mod_container" id="J_container">
+    </main>
+  </div>
+  <script>
+    $("#top").load("./top.html");
+    $("#header").load("./index-header.html");
+    $("#J_container").load("./index-main.html",function(){
+      $.getScript("../js/index-main4.js", function () {
+      $.getScript("../js/index-main1.js", function () {
+      });
+      });
+    });
+ </script>
+</body>
+
+
+</html>

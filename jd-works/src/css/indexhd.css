@@ -1,0 +1,223 @@
+#header {
+  height: 122px;
+  position: relative;
+  width: 1190px;
+  margin: 0 auto; }
+  #header #logo-2014 {
+    cursor: pointer;
+    position: relative;
+    z-index: 12;
+    float: left;
+    width: 276px;
+    height: 50px;
+    margin: 15px 0 22px;
+    margin-top: 42px;
+    margin-bottom: 22px;
+    background: url(img/mod_header_logo.png) no-repeat 0 0;
+    background-size: 200px 40px;
+    text-indent: -999px; }
+  #header #search-2014 {
+    width: 450px;
+    margin: 42px 0 0 155px;
+    position: relative;
+    z-index: 11;
+    float: left; }
+    #header #search-2014 #shelper {
+      display: none;
+      overflow: hidden;
+      width: 448px;
+      position: absolute;
+      top: 36px;
+      left: 0;
+      border: 1px solid #ccc;
+      background: #fff; }
+      #header #search-2014 #shelper li {
+        overflow: hidden;
+        padding: 1px 5px;
+        line-height: 22px;
+        cursor: pointer; }
+        #header #search-2014 #shelper li:hover {
+          background: #ffdfc6; }
+        #header #search-2014 #shelper li .search-item {
+          float: left;
+          width: 250px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+        #header #search-2014 #shelper li .search-count {
+          overflow: hidden;
+          color: #aaa;
+          text-align: right; }
+    #header #search-2014 .form {
+      width: 450px;
+      height: 36px; }
+      #header #search-2014 .form .text {
+        width: 360px;
+        font-size: 14px;
+        border: solid #00c65d;
+        color: #999;
+        float: left;
+        height: 24px;
+        line-height: 24px;
+        padding: 4px;
+        margin-bottom: 4px;
+        border-width: 2px 0 2px 2px;
+        outline: 0; }
+      #header #search-2014 .form .button {
+        width: 80px;
+        background: #00c65d;
+        float: left;
+        height: 36px;
+        border: none;
+        border-radius: 0;
+        line-height: 1;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        zoom: 1; }
+  #header #settleup-2014 {
+    margin: 42px 0 0 30px;
+    float: left;
+    z-index: 11;
+    height: 36px;
+    position: relative; }
+    #header #settleup-2014:hover .cw-icon {
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+    #header #settleup-2014:hover .carlayer {
+      display: block;
+      right: 0;
+      width: 308px;
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+    #header #settleup-2014 .carlayer {
+      position: absolute;
+      display: none; }
+      #header #settleup-2014 .carlayer .spacer {
+        position: absolute;
+        right: 0;
+        top: -7px;
+        width: 137px;
+        height: 12px;
+        background: #fff; }
+      #header #settleup-2014 .carlayer .prompt {
+        padding: 10px 15px; }
+        #header #settleup-2014 .carlayer .prompt .nogood {
+          padding-left: 30px;
+          height: 49px;
+          line-height: 49px;
+          overflow: hidden;
+          color: #999; }
+          #header #settleup-2014 .carlayer .prompt .nogood b {
+            float: left;
+            width: 56px;
+            height: 49px;
+            background: url(img/settleup-nogoods.png) no-repeat 0 0; }
+    #header #settleup-2014 .cw-icon {
+      width: 64px;
+      padding: 0 30px 0 42px;
+      height: 34px;
+      border: 1px solid #dfdfdf;
+      background: #f9f9f9;
+      line-height: 34px;
+      position: relative; }
+      #header #settleup-2014 .cw-icon .ci-left {
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        width: 18px;
+        height: 18px;
+        background: url(img/mod_header_cart.png) no-repeat 0 0;
+        background-size: 18px 18px; }
+      #header #settleup-2014 .cw-icon .ci-right {
+        position: absolute;
+        top: 13px;
+        right: 12px;
+        height: 10px;
+        width: 10px;
+        overflow: hidden;
+        background: url(img/right-gt.png) no-repeat 0 0;
+        background-size: 10px 10px; }
+      #header #settleup-2014 .cw-icon .ci-count {
+        overflow: hidden;
+        position: absolute;
+        top: -5px;
+        left: auto;
+        right: -1px;
+        display: inline-block;
+        padding: 1px;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: -1px;
+        color: #fff;
+        background: #da1026;
+        border-radius: 7px;
+        min-width: 14px;
+        text-align: center;
+        font-family: tahoma, arial; }
+      #header #settleup-2014 .cw-icon .ci-car {
+        color: #666; }
+  #header #J_headerqrcode {
+    display: block;
+    position: relative;
+    float: right;
+    width: 120px;
+    margin: 42px 0 0 19px; }
+    #header #J_headerqrcode .headerqrcode_lk {
+      text-align: center;
+      border: 1px solid #dfdfdf;
+      display: block;
+      height: 34px;
+      line-height: 34px;
+      background: #f9f9f9;
+      position: relative;
+      padding-left: 30px;
+      color: #232321; }
+      #header #J_headerqrcode .headerqrcode_lk .headerqrcode_ico {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        left: 8px;
+        background: url(img/qrcode.png) no-repeat 0 0;
+        background-size: 25px 25px; }
+    #header #J_headerqrcode:hover .headerqrcode_qc {
+      opacity: 1;
+      visibility: visible; }
+    #header #J_headerqrcode .headerqrcode_qc {
+      position: absolute;
+      top: 35px;
+      border: 1px solid #dfdfdf;
+      width: 108px;
+      padding: 5px;
+      text-align: center;
+      z-index: 100;
+      background: #fff;
+      opacity: 0;
+      visibility: hidden;
+      zoom: 1;
+      transition: all .3s; }
+      #header #J_headerqrcode .headerqrcode_qc .headerqrcode_qcimg {
+        width: 110px;
+        height: 110px; }
+  #header #hotwords {
+    width: 447px;
+    padding-left: 155px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 0;
+    font-size: 14px;
+    color: #333;
+    float: left;
+    overflow: hidden; }
+    #header #hotwords a {
+      margin-right: 10px;
+      color: #999; }
+      #header #hotwords a:hover {
+        color: #00c65d; }
+

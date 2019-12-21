@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/goodlist.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../lib/common.js"></script>
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <style>
+        #top .w{
+            width: 1390px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top"> 
+    </div>
+    <div class="w" id="header">
+    </div>
+    <div id="main">
+    </div>
+    <!-- footer -->
+     <div id="footer"> 
+    </div> 
+
+    
+    <script>
+    $("#top").load("./top.html");
+    $("#header").load("./goodlist-header.html");
+     $("#main").load("./goodlist-main.html",function(){
+        $.getScript("../js/goodlist.js", function () { 
+        });
+    });
+    $("#footer").load("./goodlist-footer.html");
+    </script>
+</body>
+
+</html>

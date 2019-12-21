@@ -1,0 +1,559 @@
+body {
+  background-color: #f6f6f6;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #232321;
+  background: #fff;
+  overflow-x: hidden; 
+}
+
+#top {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #e3e4e5;
+  border-bottom: solid 1px #ddd;
+  z-index: 30; }
+  #top li {
+    float: left;
+    height: 30px;
+    padding: 0 2px; }
+  #top .w {
+    background: #e3e4e5;
+    color: #999;
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative; }
+    #top .w #ttbar-home .iconfont {
+      position: relative;
+      display: inline;
+      font-size: 18px;
+      color: #5c5452; }
+    #top .w #ttbar-mycity {
+      padding: 0;
+      position: relative;
+      box-sizing: border-box; }
+      #top .w #ttbar-mycity .iconfont {
+        position: relative;
+        display: inline;
+        font-size: 14px;
+        color: #5c5452; }
+      #top .w #ttbar-mycity .dt {
+        padding: 0 25px 0 10px; }
+      #top .w #ttbar-mycity .ddspace {
+        display: none;
+        width: 78px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        bottom: -1px;
+        left: 0; }
+      #top .w #ttbar-mycity .dd {
+        display: none;
+        width: 301px;
+        padding: 10px 0 10px 10px;
+        line-height: 24px;
+        border: 1px solid #ccc;
+        border-top: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 30;
+        background: #fff; }
+        #top .w #ttbar-mycity .dd .citylist {
+          overflow: hidden; }
+          #top .w #ttbar-mycity .dd .citylist li {
+            width: 60px;
+            height: 24px;
+            float: left;
+            padding: 2px 0; }
+            #top .w #ttbar-mycity .dd .citylist li a {
+              display: inline-block;
+              padding: 0 8px; }
+              #top .w #ttbar-mycity .dd .citylist li a:hover {
+                background: #f4f4f4; }
+            #top .w #ttbar-mycity .dd .citylist li .selected {
+              background: #f30213 !important;
+              color: #fff !important; }
+        #top .w #ttbar-mycity .dd .country {
+          margin: 10px 0 10px 10px; }
+          #top .w #ttbar-mycity .dd .country .cyline {
+            width: 262px;
+            height: 0;
+            border: dotted 1px #eee; }
+          #top .w #ttbar-mycity .dd .country p {
+            margin: 9px 0; }
+          #top .w #ttbar-mycity .dd .country ul {
+            overflow: hidden; }
+            #top .w #ttbar-mycity .dd .country ul li {
+              float: left;
+              width: 145px;
+              height: 26px;
+              padding: 0;
+              line-height: 26px; }
+              #top .w #ttbar-mycity .dd .country ul li a {
+                display: block;
+                overflow: hidden; }
+                #top .w #ttbar-mycity .dd .country ul li a .ico {
+                  float: left;
+                  position: relative;
+                  top: 7px;
+                  width: 15px;
+                  margin-right: 8px;
+                  height: 10px;
+                  border: solid 1px transparent; }
+                #top .w #ttbar-mycity .dd .country ul li a .ioc_name {
+                  width: 120px;
+                  float: left; }
+                #top .w #ttbar-mycity .dd .country ul li a .ico_global {
+                  background: url(img/cty_bg.png) no-repeat 0 0;
+                  height: 12px;
+                  margin-top: -1px; }
+                #top .w #ttbar-mycity .dd .country ul li a .ico_russia {
+                  border: solid 1px #ebebeb;
+                  background: url(img/cty_bg.png) no-repeat -20px 0;
+                  height: 12px;
+                  margin-top: -1px; }
+                #top .w #ttbar-mycity .dd .country ul li a .ico_indonesia {
+                  border: solid 1px #ebebeb;
+                  background: url(img/cty_bg.png) no-repeat 0 -17px;
+                  height: 12px;
+                  margin-top: -1px; }
+                #top .w #ttbar-mycity .dd .country ul li a .ico_spain {
+                  border: solid 1px #ebebeb;
+                  background: url(img/cty_bg.png) no-repeat -40px 0;
+                  height: 12px;
+                  margin-top: -1px; }
+                #top .w #ttbar-mycity .dd .country ul li a .ico_thailand {
+                  border: solid 1px #ebebeb;
+                  background: url(img/cty_bg.png) no-repeat -20px -17px;
+                  height: 12px;
+                  margin-top: -1px; }
+      #top .w #ttbar-mycity:hover {
+        background: #fff;
+        border: solid #ddd;
+        border-width: 0 1px; }
+        #top .w #ttbar-mycity:hover .dt {
+          border: solid #ccc;
+          border-width: 0 1px; }
+        #top .w #ttbar-mycity:hover .dd {
+          display: block; }
+        #top .w #ttbar-mycity:hover .ddspace {
+          display: block; }
+    #top .w .spacer {
+      width: 1px;
+      height: 12px;
+      margin-top: 9px;
+      padding: 0;
+      background: #ccc;
+      overflow: hidden; }
+    #top .w .dt {
+      float: left;
+      padding: 0 8px; }
+    #top .w .dd {
+      line-height: 24px;
+      z-index: 30; }
+    #top .w .fore3 {
+      position: relative; }
+      #top .w .fore3 .cw1-layer {
+        display: none;
+        width: 280px;
+        position: absolute;
+        top: 30px;
+        left: 1px;
+        background: #fff;
+        border: 1px solid #ddd; }
+        #top .w .fore3 .cw1-layer .ddspace {
+          position: absolute;
+          top: -7px;
+          left: 0px;
+          height: 10px;
+          width: 79px;
+          background: #fff;
+          overflow: hidden; }
+        #top .w .fore3 .cw1-layer .myjdlist1 {
+          width: 265px;
+          padding: 5px 0 5px 15px;
+          overflow: hidden; }
+          #top .w .fore3 .cw1-layer .myjdlist1 .m1f1 {
+            float: left;
+            width: 126px; }
+          #top .w .fore3 .cw1-layer .myjdlist1 .m1f2 {
+            float: left;
+            width: 126px; }
+        #top .w .fore3 .cw1-layer .myjdlist2 {
+          border-top: 1px solid #f1f1f1;
+          width: 265px;
+          padding: 5px 0 5px 15px;
+          overflow: hidden; }
+          #top .w .fore3 .cw1-layer .myjdlist2 .m2f1 {
+            float: left;
+            width: 126px; }
+          #top .w .fore3 .cw1-layer .myjdlist2 .m2f2 {
+            float: left;
+            width: 126px; }
+        #top .w .fore3 .cw1-layer .viewlist {
+          z-index: 30;
+          display: none;
+          width: 250px;
+          padding: 0 15px 10px;
+          border-top: 1px solid #f1f1f1;
+          padding-top: 10px; }
+          #top .w .fore3 .cw1-layer .viewlist .smt {
+            overflow: hidden;
+            zoom: 1; }
+            #top .w .fore3 .cw1-layer .viewlist .smt h4 {
+              float: left; }
+            #top .w .fore3 .cw1-layer .viewlist .smt span {
+              float: right; }
+          #top .w .fore3 .cw1-layer .viewlist .smc {
+            overflow: hidden;
+            zoom: 1; }
+      #top .w .fore3:hover {
+        padding: 0 1px; }
+        #top .w .fore3:hover .dt {
+          background: #fff;
+          border: solid #ddd;
+          border-width: 0 1px; }
+        #top .w .fore3:hover .dd {
+          display: block; }
+    #top .w #ttbar-ent {
+      position: relative; }
+      #top .w #ttbar-ent .dt {
+        width: 49px;
+        padding-right: 25px;
+        position: relative; }
+        #top .w #ttbar-ent .dt .iconfont {
+          position: absolute;
+          right: 5px;
+          top: 10px;
+          width: 12px;
+          height: 12px;
+          line-height: 12px;
+          font-size: 12px; }
+      #top .w #ttbar-ent .dd {
+        z-index: 30;
+        display: none;
+        position: absolute;
+        left: 1px;
+        top: 30px;
+        background: #fff;
+        border: 1px solid #ddd;
+        width: 140px;
+        padding: 10px 0 10px 15px; }
+        #top .w #ttbar-ent .dd .ddspace {
+          position: absolute;
+          top: -7px;
+          left: 0px;
+          height: 10px;
+          width: 82px;
+          background: #fff;
+          overflow: hidden; }
+        #top .w #ttbar-ent .dd .item {
+          display: inline-block;
+          width: 56px;
+          white-space: nowrap; }
+      #top .w #ttbar-ent:hover {
+        padding: 0 1px; }
+        #top .w #ttbar-ent:hover .dt {
+          background: #fff;
+          border: solid #ddd;
+          border-width: 0 1px; }
+        #top .w #ttbar-ent:hover .dd {
+          display: block; }
+    #top .w #ttbar-serv {
+      position: relative; }
+      #top .w #ttbar-serv .dt {
+        width: 49px;
+        padding-right: 25px;
+        position: relative; }
+        #top .w #ttbar-serv .dt .iconfont {
+          position: absolute;
+          right: 5px;
+          top: 10px;
+          width: 12px;
+          height: 12px;
+          line-height: 12px;
+          font-size: 12px; }
+      #top .w #ttbar-serv .dd {
+        z-index: 30;
+        display: none;
+        position: absolute;
+        right: 1px;
+        top: 30px;
+        background: #fff;
+        border: 1px solid #ddd;
+        width: 170px;
+        padding: 10px 0; }
+        #top .w #ttbar-serv .dd .ddspace {
+          position: absolute;
+          top: -7px;
+          right: 0px;
+          height: 10px;
+          width: 82px;
+          background: #fff;
+          overflow: hidden; }
+        #top .w #ttbar-serv .dd .item-client,
+        #top .w #ttbar-serv .dd .item-business {
+          padding-left: 10px;
+          font-weight: 700;
+          color: #666; }
+        #top .w #ttbar-serv .dd .item-business {
+          border-top: 1px dotted #eee;
+          padding-top: 5px;
+          margin-top: 5px; }
+        #top .w #ttbar-serv .dd .item {
+          display: inline-block;
+          width: 70px;
+          padding-left: 10px; }
+      #top .w #ttbar-serv:hover {
+        padding: 0 1px; }
+        #top .w #ttbar-serv:hover .dt {
+          background: #fff;
+          border: solid #ddd;
+          border-width: 0 1px; }
+        #top .w #ttbar-serv:hover .dd {
+          display: block; }
+    #top .w #ttbar-navs {
+      position: relative; }
+      #top .w #ttbar-navs dt {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: #666; }
+      #top .w #ttbar-navs .item {
+        width: 86px;
+        float: left; }
+      #top .w #ttbar-navs .dt {
+        width: 49px;
+        padding-right: 25px;
+        position: relative; }
+        #top .w #ttbar-navs .dt .iconfont {
+          position: absolute;
+          right: 5px;
+          top: 10px;
+          width: 12px;
+          height: 12px;
+          line-height: 12px;
+          font-size: 12px; }
+      #top .w #ttbar-navs .dd {
+        z-index: 30;
+        display: none;
+        position: absolute;
+        right: -69px;
+        top: 30px;
+        background: #fff;
+        border: 1px solid #ddd;
+        width: 1208px;
+        padding: 20px 0 16px; }
+        #top .w #ttbar-navs .dd .ddspace {
+          position: absolute;
+          top: -7px;
+          right: 70px;
+          height: 10px;
+          width: 82px;
+          background: #fff;
+          overflow: hidden; }
+        #top .w #ttbar-navs .dd dl {
+          float: left;
+          padding-left: 20px;
+          border-left: 1px solid #eee; }
+        #top .w #ttbar-navs .dd .navfore1 {
+          width: 347px;
+          border-left: none; }
+        #top .w #ttbar-navs .dd .navfore2 {
+          width: 259px; }
+        #top .w #ttbar-navs .dd .navfore3 {
+          width: 259px; }
+        #top .w #ttbar-navs .dd .navfore4 {
+          width: 259px; }
+      #top .w #ttbar-navs:hover {
+        padding: 0 1px; }
+        #top .w #ttbar-navs:hover .dt {
+          background: #fff;
+          border: solid #ddd;
+          border-width: 0 1px; }
+        #top .w #ttbar-navs:hover .dd {
+          display: block; }
+    #top .w #ttbar-apps {
+      position: relative; }
+      #top .w #ttbar-apps .dt {
+        float: left;
+        padding: 0 8px; }
+      #top .w #ttbar-apps .dd {
+        z-index: 30;
+        display: none;
+        width: 190px;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        border: 1px solid #ddd;
+        border-bottom: 3px solid #60575a;
+        background: #fff; }
+        #top .w #ttbar-apps .dd .ddspace {
+          background: #fff;
+          overflow: hidden;
+          display: block;
+          position: absolute;
+          top: -9px;
+          left: 154px;
+          margin-left: -5px;
+          width: 0;
+          height: 0;
+          line-height: 0;
+          font-size: 0;
+          border: 5px solid;
+          border-color: #e4e4e4 #e4e4e4 #fff; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_item {
+          position: relative;
+          z-index: 5;
+          padding: 15px 0;
+          border-bottom: 1px solid #E7E7E7; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_qrcode {
+          position: absolute;
+          left: 5px;
+          top: 14px;
+          width: 74px;
+          height: 74px;
+          border: 1px solid #CCC;
+          background-color: #F7F7F7; }
+          #top .w #ttbar-apps .dd .dd-inner .mobile_pop_qrcode img {
+            width: 70px;
+            height: 70px;
+            margin: 2px 0 0 2px; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_info {
+          margin: 0 10px 0 86px;
+          min-height: 70px; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_tit {
+          font-size: 12px;
+          line-height: 17px;
+          color: #666 !important; }
+          #top .w #ttbar-apps .dd .dd-inner .mobile_pop_tit a {
+            color: #666 !important; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_value {
+          margin: 3px 0;
+          line-height: 14px;
+          color: #F10214; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_device {
+          overflow: hidden;
+          height: 25px; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_device_lk {
+          overflow: hidden;
+          float: left;
+          margin-right: 2px;
+          width: 25px;
+          height: 25px;
+          text-indent: -999px;
+          background-image: url(img/appbg.png); }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_device_ios {
+          background-position: 0 0; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_device_and {
+          background-position: 0 -26px; }
+        #top .w #ttbar-apps .dd .dd-inner .mobile_pop_device_pad {
+          background-position: 0 -52px; }
+      #top .w #ttbar-apps:hover {
+        padding: 0 2px; }
+        #top .w #ttbar-apps:hover .dd {
+          display: block; }
+    #top .w #ttbar-login {
+      margin-right: 10px; }
+      #top .w #ttbar-login .link-login {
+        font-family: 'verdana,simsun'; }
+      #top .w #ttbar-login .style-red {
+        color: #f30213; }
+      #top .w #ttbar-login .cw-icon {
+        position: relative;
+        cursor: default;
+        zoom: 1;
+        float: left;
+        padding: 0 8px;
+        padding-right: 72px; }
+        #top .w #ttbar-login .cw-icon .icon-plus-nickname {
+          overflow: hidden;
+          position: absolute;
+          right: 27px;
+          top: 7px;
+          display: block;
+          width: 38px;
+          height: 16px;
+          background: #d7d4cb url(img/user-plus-status.png) no-repeat 0 -68px; }
+        #top .w #ttbar-login .cw-icon .nickname {
+          color: #999;
+          display: block;
+          width: 70px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-align: right; }
+        #top .w #ttbar-login .cw-icon .iconfont {
+          display: block;
+          overflow: hidden;
+          position: absolute;
+          right: 5px;
+          top: 10px;
+          width: 12px;
+          height: 12px;
+          line-height: 12px;
+          font-size: 10px; }
+      #top .w #ttbar-login .dorpdown-layer {
+        display: none;
+        position: absolute;
+        line-height: 24px;
+        top: 30px;
+        background: #fff;
+        border: 1px solid #ddd;
+        width: 280px; }
+        #top .w #ttbar-login .dorpdown-layer .dd-spacer {
+          position: absolute;
+          top: -7px;
+          height: 10px;
+          background: #fff;
+          overflow: hidden;
+          width: 150px; }
+        #top .w #ttbar-login .dorpdown-layer .userinfo {
+          padding: 10px 0 10px 15px;
+          overflow: hidden; }
+          #top .w #ttbar-login .dorpdown-layer .userinfo .u-pic {
+            float: left;
+            margin-right: 10px; }
+            #top .w #ttbar-login .dorpdown-layer .userinfo .u-pic a {
+              color: #999; }
+              #top .w #ttbar-login .dorpdown-layer .userinfo .u-pic a img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%; }
+          #top .w #ttbar-login .dorpdown-layer .userinfo .u-plus {
+            padding: 10px 0 0;
+            overflow: hidden;
+            border-bottom: 1px solid #e3e4e5; }
+            #top .w #ttbar-login .dorpdown-layer .userinfo .u-plus .link-logout {
+              float: right;
+              margin-right: 10px;
+              line-height: 1.2;
+              color: #999; }
+            #top .w #ttbar-login .dorpdown-layer .userinfo .u-plus .icon-plus-dropdown {
+              display: block;
+              width: 80px;
+              height: 16px;
+              background: url(img/user-plus-status.png) no-repeat 0 -34px; }
+          #top .w #ttbar-login .dorpdown-layer .userinfo .u-msg {
+            font-family: simsun, Hiragino Sans GB;
+            padding-top: 4px; }
+            #top .w #ttbar-login .dorpdown-layer .userinfo .u-msg a {
+              color: #999; }
+    #top .w .hover {
+      padding: 0 1px; }
+      #top .w .hover .dt {
+        background: #fff;
+        border: solid #ddd;
+        border-width: 0 1px; }
+    #top .w .cw1 {
+      position: relative; }
+      #top .w .cw1 i {
+        font-size: 12px; }
+  #top a {
+    color: #999; }
+    #top a:hover {
+      color: #f30213; }
+
+
